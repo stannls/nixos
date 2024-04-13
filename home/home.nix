@@ -39,6 +39,7 @@
 	pkgs.dunst
 	pkgs.libnotify
 	pkgs.spotify
+	pkgs.openjdk
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
