@@ -40,6 +40,7 @@
 	pkgs.libnotify
 	pkgs.spotify
 	pkgs.openjdk
+	pkgs.yubikey-manager
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
