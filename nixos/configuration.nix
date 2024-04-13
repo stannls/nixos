@@ -153,6 +153,7 @@
     programs.nix-ld.enable = true;
 
   	programs.nix-ld.libraries = with pkgs; [
+		zlib
 	];
 
   # This value determines the NixOS release from which the default
