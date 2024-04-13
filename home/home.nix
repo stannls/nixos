@@ -41,6 +41,7 @@
 	pkgs.spotify
 	pkgs.openjdk
 	pkgs.yubikey-manager
+	pkgs.yubioath-flutter
 	(pkgs.python3.withPackages (python-pkgs: [
     ]))
   ];
