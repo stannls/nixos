@@ -41,6 +41,7 @@
 	pkgs.spotify
 	pkgs.openjdk
 	pkgs.yubikey-manager
+	pkgs.python3
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
