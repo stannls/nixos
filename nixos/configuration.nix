@@ -150,6 +150,11 @@
     [Settings]
     gtk-theme-name = Dracula
   '';
+    programs.nix-ld.enable = true;
+
+  	programs.nix-ld.libraries = with pkgs; [
+		libnotify
+	];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
