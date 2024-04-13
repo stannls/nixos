@@ -153,8 +153,6 @@
     programs.nix-ld.enable = true;
 
   	programs.nix-ld.libraries = with pkgs; [
-		libnotify
-		gtk3
 	];
 
   # This value determines the NixOS release from which the default
