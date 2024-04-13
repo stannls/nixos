@@ -42,6 +42,7 @@
 	pkgs.openjdk
 	pkgs.yubikey-manager
 	pkgs.yubioath-flutter
+	pkgs.vscodium
 	(pkgs.python3.withPackages (python-pkgs: [
     ]))
   ];
