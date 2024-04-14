@@ -68,6 +68,10 @@
     enable = true;
     userName = "Yannis Storrer";
     userEmail = "yannis.storrer@web.de";
+	signing.key = "0x0455FACFE6E333A9";
+	extraConfig = {
+	
+	};
   };
   services.gpg-agent = {
       enable = true;
