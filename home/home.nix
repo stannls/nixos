@@ -45,6 +45,7 @@
 	pkgs.vscodium
 	(pkgs.python3.withPackages (python-pkgs: [
     ]))
+	pkgs.signal-desktop
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
