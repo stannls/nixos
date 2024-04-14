@@ -68,7 +68,7 @@
     enable = true;
     userName = "Yannis Storrer";
     userEmail = "yannis.storrer@web.de";
-	signing.key = "0455FACFE6E333A9";
+	signing.key = "4D4F489A421B7DBB";
 	extraConfig = {
 		commit.gpgsign = true;
 		init.defaultBranch = "main";
