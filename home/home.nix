@@ -71,6 +71,7 @@
 	signing.key = "0455FACFE6E333A9";
 	extraConfig = {
 		commit.gpgsign = true;
+		init.defaultBranch = "main";
 	};
   };
   services.gpg-agent = {
