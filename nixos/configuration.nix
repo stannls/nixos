@@ -131,6 +131,7 @@
   programs.gnupg.agent = {
     enable = true;
     enableSSHSupport = true;
+	pinentryPackage  = pkgs.pinentry-gtk2;
   }; 
   programs.ssh.startAgent = false;
   services.pcscd.enable = true;
