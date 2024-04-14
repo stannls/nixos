@@ -68,9 +68,9 @@
     enable = true;
     userName = "Yannis Storrer";
     userEmail = "yannis.storrer@web.de";
-	signing.key = "0x0455FACFE6E333A9";
+	signing.key = "0455FACFE6E333A9";
 	extraConfig = {
-	
+		commit.gpgsign = true;
 	};
   };
   services.gpg-agent = {
