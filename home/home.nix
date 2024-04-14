@@ -57,7 +57,7 @@
       update-user = "home-manager switch";
     };
     history.size = 10000;
-    history.path = "~/zsh/history";
+    history.path = "/home/yannis/zsh/history";
     oh-my-zsh = {
       enable = true;
       plugins = [ "git" "gradle" "npm" "pass" "rust"];
