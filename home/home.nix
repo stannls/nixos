@@ -45,6 +45,7 @@
 	(pkgs.python3.withPackages (python-pkgs: [
     ]))
 	pkgs.signal-desktop
+	pkgs.xdg-utils
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
