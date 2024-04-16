@@ -46,6 +46,7 @@
     ]))
 	pkgs.signal-desktop
 	pkgs.xdg-utils
+	pkgs.maven
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
