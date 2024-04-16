@@ -38,7 +38,6 @@
 	pkgs.dunst
 	pkgs.libnotify
 	pkgs.spotify
-	pkgs.openjdk
 	pkgs.yubikey-manager
 	pkgs.yubioath-flutter
 	pkgs.vscodium
@@ -75,6 +74,10 @@
 		commit.gpgsign = true;
 		init.defaultBranch = "main";
 	};
+  };
+  programs.java = {
+    enable = true;
+    package = (pkgs.jdk21.override { enableJavaFX = true; });
   };
   services.gpg-agent = {
       enable = true;
