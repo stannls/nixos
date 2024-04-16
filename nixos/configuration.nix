@@ -160,6 +160,19 @@
 
   	programs.nix-ld.libraries = with pkgs; [
 		zlib
+		xorg.libX11
+		xorg.libXxf86vm
+		libGL
+		gtk2
+		gtk3
+		xorg.libXtst
+		xorg.libXext
+		gdk-pixbuf
+		glib
+		gperf
+		xorg.libXrender
+		xorg.libXi
+		freetype
 	];
 
   # This value determines the NixOS release from which the default

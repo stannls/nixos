@@ -46,6 +46,8 @@
 	pkgs.signal-desktop
 	pkgs.xdg-utils
 	pkgs.maven
+	pkgs.jdk21
+	pkgs.lutris
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -74,10 +76,6 @@
 		commit.gpgsign = true;
 		init.defaultBranch = "main";
 	};
-  };
-  programs.java = {
-    enable = true;
-    package = (pkgs.jdk21.override { enableJavaFX = true; });
   };
   services.gpg-agent = {
       enable = true;
