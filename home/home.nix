@@ -48,6 +48,8 @@
 	pkgs.maven
 	pkgs.jdk21
 	pkgs.lutris
+	pkgs.grim
+	pkgs.slurp
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

@@ -76,6 +76,7 @@
 	qemu
 	ntfs3g
 	fuse
+	texlive.combined.scheme-medium
   ];
  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
