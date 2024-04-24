@@ -51,6 +51,7 @@
 	pkgs.grim
 	pkgs.slurp
 	pkgs.rhythmbox
+	pkgs.nicotine-plus
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
