@@ -50,6 +50,7 @@
 	pkgs.lutris
 	pkgs.grim
 	pkgs.slurp
+	pkgs.rhythmbox
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
