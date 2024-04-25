@@ -54,6 +54,7 @@
 	pkgs.nicotine-plus
 	pkgs.beets
 	pkgs.gdb
+	pkgs.ghidra
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
