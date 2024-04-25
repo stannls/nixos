@@ -53,6 +53,7 @@
 	pkgs.rhythmbox
 	pkgs.nicotine-plus
 	pkgs.beets
+	pkgs.gdb
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;

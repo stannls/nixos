@@ -77,6 +77,7 @@
 	ntfs3g
 	fuse
 	texlive.combined.scheme-medium
+	quickemu
   ];
  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
