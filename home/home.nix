@@ -55,6 +55,7 @@
 	pkgs.beets
 	pkgs.gdb
 	pkgs.ghidra
+	pkgs.pkg-config
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
