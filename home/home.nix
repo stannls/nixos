@@ -59,6 +59,7 @@
 	pkgs.openssl
 	pkgs.feh
 	pkgs.chromaprint
+	pkgs.lollypop
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
