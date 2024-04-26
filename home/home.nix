@@ -58,6 +58,7 @@
 	pkgs.pkg-config
 	pkgs.openssl
 	pkgs.feh
+	pkgs.chromaprint
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
@@ -139,6 +140,7 @@
 	  recursive = true;
    };
    ".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
+   ".config/beets/config.yaml".source = ./beets/config.yaml;
    "Pictures/Backgrounds/flowers.jpg".source = ./flowers.jpg;
   };
 

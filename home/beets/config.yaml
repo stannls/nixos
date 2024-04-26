@@ -1,0 +1,6 @@
+directory: ~/Music/Library
+library: ~/Music/musiclibrary.db
+import:
+  move: yes
+chroma:
+    auto: yes
