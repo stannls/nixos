@@ -57,6 +57,7 @@
 	pkgs.ghidra
 	pkgs.pkg-config
 	pkgs.openssl
+	pkgs.feh
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
