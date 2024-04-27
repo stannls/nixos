@@ -60,6 +60,7 @@
 	pkgs.feh
 	pkgs.chromaprint
 	pkgs.lollypop
+	pkgs.openvpn
   ];
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
