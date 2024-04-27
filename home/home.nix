@@ -27,7 +27,7 @@
     pkgs.pulsemixer
     pkgs.pass-wayland
     pkgs.yarn
-    pkgs.nodejs_21
+    pkgs.nodejs
     pkgs.swaybg
     pkgs.wl-clipboard
 	pkgs.gnome.nautilus
