@@ -3,6 +3,7 @@
 {
 	imports = [
 		./alacritty/alacritty.nix
+		./beets/beets.nix
 	];
 
   	home.username = "yannis";
@@ -44,7 +45,6 @@
 		slurp
 		rhythmbox
 		nicotine-plus
-		beets
 		gdb
 		ghidra
 		pkg-config
@@ -142,7 +142,6 @@
 	  		source = ./dunst;
 	  		recursive = true;
    		};
-   		".config/beets/config.yaml".source = ./beets/config.yaml;
    		"Pictures/Backgrounds/flowers.jpg".source = ./flowers.jpg;
   	};
 
