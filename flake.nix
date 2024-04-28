@@ -17,21 +17,25 @@
       system = "x86_64-linux";
 	  specialArgs = { inherit self system; };
       modules = [
-	  		({ self, system, ... }: {
-            environment.systemPackages = with self.inputs.nix-alien.packages.${system}; [
-              nix-alien
-            ];
-            programs.nix-ld.enable = true;
-          })
-			nix-ld.nixosModules.nix-ld
-        	./nixos/default.nix
-			./nixos/desktop/configuration.nix
-        	home-manager.nixosModules.home-manager
-          	{
-            	home-manager.useGlobalPkgs = true;
-            	home-manager.useUserPackages = true;
-            	home-manager.users.yannis = import ./home/home.nix;
-        	}
+	    # Dynamic linking shenanigans
+	  	({ self, system, ... }: {
+          environment.systemPackages = with self.inputs.nix-alien.packages.${system}; [
+            nix-alien
+          ];
+          programs.nix-ld.enable = true;
+        })
+		nix-ld.nixosModules.nix-ld
+
+		# Nixos config
+        ./nixos/default.nix
+		./nixos/desktop/configuration.nix
+		# Home manager config
+        home-manager.nixosModules.home-manager
+        {
+          home-manager.useGlobalPkgs = true;
+          home-manager.useUserPackages = true;
+          home-manager.users.yannis = import ./home/home.nix;
+        }
 	  ];
     };
   };
