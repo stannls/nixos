@@ -52,7 +52,7 @@
 	openvpn
   ];
   # Allow unfree packages
-  nixpkgsconfig.allowUnfree = true;
+  nixpkgs.config.allowUnfree = true;
   programs.zsh = {
     enable = true;
     enableCompletion = true;
