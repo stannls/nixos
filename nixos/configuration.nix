@@ -1,28 +1,20 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
-
 { lib, config, pkgs, ... }:
 {
   imports =
-    [ # Include the results of the hardware scan.
-      ./hardware-configuration.nix
+    [
+		./hardware-configuration.nix
     ];
 
-  #Flakes
+  # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   
-  networking.hostName = "nixos"; # Define your hostname.
-  # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-
-  # Configure network proxy if necessary
-  # networking.proxy.default = "http://user:password@proxy:port/";
-  # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
+  networking.hostName = "nixos"; 
 
   # Enable networking
   networking.networkmanager.enable = true;
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
+  # Bootloader settings
   boot.loader.grub.enable = lib.mkDefault true;
   boot.loader.grub.version = lib.mkDefault 2;
   boot.loader.grub.device = lib.mkDefault "nodev";
@@ -53,7 +45,7 @@
   # Configure console keymap
   console.keyMap = "us";
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
+  # Define a user account.
   users.users.yannis = {
     isNormalUser = true;
     description = "Yannis Storrer";
@@ -62,8 +54,7 @@
   };
   users.defaultUserShell = pkgs.zsh;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
+  # System packages
   environment.systemPackages = with pkgs; [
     git
     wget
@@ -99,12 +90,13 @@
         dina-font
         proggyfonts
         (nerdfonts.override { fonts = [
-          "SpaceMono"
-	  "JetBrainsMono"
-	  "DejaVuSansMono"
+			"SpaceMono"
+	  		"JetBrainsMono"
+	  		"DejaVuSansMono"
 	]; })	
     ];
   };
+
   programs.zsh.enable = true;
 
   programs.neovim = {
@@ -170,8 +162,8 @@
     VIDEOS=Videos
   '';
 };
+	# Settings for dynamically linked programs
     programs.nix-ld.enable = true;
-
   	programs.nix-ld.libraries = with pkgs; [
 		zlib
 		xorg.libX11
@@ -189,12 +181,5 @@
 		freetype
 	];
 
-  # This value determines the NixOS release from which the default
-  # settings for stateful data, like file locations and database versions
-  # on your system were taken. It‘s perfectly fine and recommended to leave
-  # this value at the release version of the first install of this system.
-  # Before changing this value read the documentation for this option
-  # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "23.11"; # Did you read the comment?
-
+  system.stateVersion = "23.11";
 }

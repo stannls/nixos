@@ -1,18 +1,13 @@
 {
-  description = "A nixos configuration flake";
+  description = "My NixOs configuration flake.";
 
   inputs = {
-    # NixOS official package source, using the nixos-23.11 branch here
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
 	nix-ld.url = "github:Mic92/nix-ld";
 	nix-ld.inputs.nixpkgs.follows = "nixpkgs";
 	nix-alien.url = "github:thiagokokada/nix-alien";
     home-manager = {
       url = "github:nix-community/home-manager/master";
-      # The `follows` keyword in inputs is used for inheritance.
-      # Here, `inputs.nixpkgs` of home-manager is kept consistent with
-      # the `inputs.nixpkgs` of the current flake,
-      # to avoid problems caused by different versions of nixpkgs.
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -26,7 +21,6 @@
             environment.systemPackages = with self.inputs.nix-alien.packages.${system}; [
               nix-alien
             ];
-            # Optional, needed for `nix-alien-ld`
             programs.nix-ld.enable = true;
           })
 			nix-ld.nixosModules.nix-ld
