@@ -39,7 +39,7 @@
 		};
 
 		font = {
-			size = 12.0;
+			size = 14.0;
 			glyph_offset = {
 				x = 0;
 				y = 0;
