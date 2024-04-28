@@ -135,18 +135,6 @@
     	gtk-theme-name = Dracula
   	'';
 
-  	environment.etc = {
-  		"xdg/user-dirs.defaults".text = ''
-    	DESKTOP=Desktop
-    	DOWNLOAD=Downloads
-    	TEMPLATES=Templates
-    	DOCUMENTS=Documents
-    	MUSIC=Music
-    	PICTURES=Pictures
-    	VIDEOS=Videos
-  	'';
-	};
-
 	# Settings for dynamically linked programs
 	programs.nix-ld.enable = true;
   	programs.nix-ld.libraries = with pkgs; [
