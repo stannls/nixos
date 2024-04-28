@@ -1,9 +1,6 @@
 { lib, config, pkgs, ... }:
 {
-  imports =
-    [
-		./hardware-configuration.nix
-    ];
+  imports = [];
 
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
