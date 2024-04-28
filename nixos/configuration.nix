@@ -78,6 +78,7 @@
 	fuse
 	texlive.combined.scheme-medium
 	quickemu
+	xdg-user-dirs
   ];
  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
