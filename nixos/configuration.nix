@@ -14,13 +14,6 @@
   networking.networkmanager.enable = true;
   # Set your time zone.
   time.timeZone = "Europe/Berlin";
-  # Bootloader settings
-  boot.loader.grub.enable = lib.mkDefault true;
-  boot.loader.grub.version = lib.mkDefault 2;
-  boot.loader.grub.device = lib.mkDefault "nodev";
-  boot.loader.grub.efiSupport = lib.mkDefault true;
-  boot.loader.efi.canTouchEfiVariables = lib.mkDefault true;
-
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
 
