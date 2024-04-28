@@ -13,7 +13,7 @@
   };
 
   outputs = { self, nixpkgs, nix-ld, home-manager, ... }@inputs: {
-    nixosConfigurations.nixos = nixpkgs.lib.nixosSystem rec {
+    nixosConfigurations.desktop = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
 	  specialArgs = { inherit self system; };
       modules = [
@@ -24,7 +24,8 @@
             programs.nix-ld.enable = true;
           })
 			nix-ld.nixosModules.nix-ld
-        	./nixos/configuration.nix
+        	./nixos/default.nix
+			./nixos/desktop/configuration.nix
         	home-manager.nixosModules.home-manager
           	{
             	home-manager.useGlobalPkgs = true;
