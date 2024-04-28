@@ -1,13 +1,16 @@
 { config, pkgs, ... }:
 
 {
+	imports = [
+		./alacritty/alacritty.nix
+	];
+
   	home.username = "yannis";
   	home.homeDirectory = "/home/yannis";
   	home.stateVersion = "23.11"; 
 
   	# User packages
   	home.packages = with pkgs; [
-    	alacritty
     	swaylock
     	waybar
     	wofi
@@ -139,7 +142,6 @@
 	  		source = ./dunst;
 	  		recursive = true;
    		};
-   		".config/alacritty/alacritty.toml".source = ./alacritty/alacritty.toml;
    		".config/beets/config.yaml".source = ./beets/config.yaml;
    		"Pictures/Backgrounds/flowers.jpg".source = ./flowers.jpg;
   	};
