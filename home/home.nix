@@ -64,7 +64,8 @@
     	enableCompletion = true;
 
     	shellAliases = {
-      		update = "sudo nixos-rebuild switch";
+      		update-desktop = "sudo nixos-rebuild --flake .#desktop switch";
+			neofetch = "fastfetch";
     	};
     	history.size = 10000;
     	history.path = "/home/yannis/zsh/history";
