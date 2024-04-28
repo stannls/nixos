@@ -6,7 +6,7 @@
 {
   imports =
     [ # Include the results of the hardware scan.
-      ./hardware-configuration2.nix
+      ./hardware-configuration.nix
     ];
 
   #Flakes
