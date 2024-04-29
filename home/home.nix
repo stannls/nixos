@@ -58,6 +58,8 @@
     lollypop
     openvpn
     rofi
+	bottom
+	pulseaudio
   ];
 
   # Allow unfree packages
