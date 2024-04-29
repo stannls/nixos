@@ -6,13 +6,14 @@
     nix-ld.url = "github:Mic92/nix-ld";
     nix-ld.inputs.nixpkgs.follows = "nixpkgs";
     nix-alien.url = "github:thiagokokada/nix-alien";
+    nix-colors.url = "github:misterio77/nix-colors";
     home-manager = {
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, nix-ld, home-manager, ... }@inputs: {
+  outputs = { self, nixpkgs, nix-ld, home-manager, nix-colors, ... }@inputs: {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
       specialArgs = { inherit self system; };
@@ -32,6 +33,9 @@
         # Home manager config
         home-manager.nixosModules.home-manager
         {
+          home-manager.extraSpecialArgs = {
+            inherit nix-colors;
+          };
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
           home-manager.users.yannis = import ./home/home.nix;

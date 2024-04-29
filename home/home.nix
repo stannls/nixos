@@ -1,11 +1,15 @@
-{ config, pkgs, ... }:
+{ config, pkgs, nix-colors, ... }:
 
 {
   imports = [
     ./alacritty/alacritty.nix
     ./beets/beets.nix
     ./dunst/dunst.nix
+    ./rofi/rofi.nix
+    nix-colors.homeManagerModules.default
   ];
+
+  colorScheme = nix-colors.colorSchemes.dracula;
 
   home.username = "yannis";
   home.homeDirectory = "/home/yannis";
@@ -53,6 +57,7 @@
     chromaprint
     lollypop
     openvpn
+    rofi
   ];
 
   # Allow unfree packages
