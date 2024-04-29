@@ -5,14 +5,15 @@
 
 {
   imports =
-    [ (modulesPath + "/installer/scan/not-detected.nix")
+    [
+      (modulesPath + "/installer/scan/not-detected.nix")
     ];
 
   boot.initrd.availableKernelModules = [ "xhci_pci" "ahci" "usb_storage" "uas" "usbhid" "sd_mod" ];
   boot.initrd.kernelModules = [ "dm-snapshot" ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
-  
+
   # Use the GRUB 2 boot loader.
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "nodev";
@@ -31,23 +32,25 @@
   };
 
   fileSystems."/" =
-    { device = "/dev/disk/by-uuid/725289db-b9a7-4799-92b4-080eeec46997";
+    {
+      device = "/dev/disk/by-uuid/725289db-b9a7-4799-92b4-080eeec46997";
       fsType = "ext4";
     };
 
   fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/5543d98a-1b6a-4d26-a885-2cbb3e7f1b48";
+    {
+      device = "/dev/disk/by-uuid/5543d98a-1b6a-4d26-a885-2cbb3e7f1b48";
       fsType = "ext4";
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/62E7-81AC";
+    {
+      device = "/dev/disk/by-uuid/62E7-81AC";
       fsType = "vfat";
     };
 
   swapDevices =
-    [ { device = "/dev/disk/by-uuid/417eb409-158d-428d-abf8-aa368f0ca76a"; }
-    ];
+    [{ device = "/dev/disk/by-uuid/417eb409-158d-428d-abf8-aa368f0ca76a"; }];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking
   # (the default) this is the recommended approach. When using systemd-networkd it's
