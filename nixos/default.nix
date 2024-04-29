@@ -33,6 +33,7 @@
 		texlive.combined.scheme-medium
 		quickemu
 		xdg-user-dirs
+		jmtpfs
   	];
 
  	# Allow unfree packages
