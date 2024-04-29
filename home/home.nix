@@ -4,6 +4,7 @@
 	imports = [
 		./alacritty/alacritty.nix
 		./beets/beets.nix
+		./dunst/dunst.nix
 	];
 
   	home.username = "yannis";
@@ -28,7 +29,6 @@
 		thunderbird
 		rustup
 		jetbrains.idea-ultimate
-		dunst
 		libnotify
 		spotify
 		yubikey-manager
@@ -139,10 +139,6 @@
    		".config/swaylock" = {
      		source = ./swaylock;
      		recursive = true;
-   		};
-   		".config/dunst" = {
-	  		source = ./dunst;
-	  		recursive = true;
    		};
    		"Pictures/Backgrounds/flowers.jpg".source = ./flowers.jpg;
   	};
