@@ -85,6 +85,7 @@
     	userEmail = "yannis.storrer@web.de";
 		signing.key = "4D4F489A421B7DBB";
 		extraConfig = {
+			pull.rebase = true;
 			commit.gpgsign = true;
 			init.defaultBranch = "main";
 		};
