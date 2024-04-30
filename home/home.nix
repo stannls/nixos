@@ -58,9 +58,9 @@
     lollypop
     openvpn
     rofi
-	bottom
-	pulseaudio
-	playerctl
+    bottom
+    pulseaudio
+    playerctl
   ];
 
   # Allow unfree packages
