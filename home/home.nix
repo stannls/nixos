@@ -6,7 +6,8 @@
     ./beets/beets.nix
     ./dunst/dunst.nix
     ./rofi/rofi.nix
-	./fastfetch/fastfetch.nix
+    ./fastfetch/fastfetch.nix
+    ./spicetify/spicetify.nix
     nix-colors.homeManagerModules.default
   ];
 
@@ -35,7 +36,6 @@
     rustup
     jetbrains.idea-ultimate
     libnotify
-    spotify
     yubikey-manager
     yubioath-flutter
     vscodium

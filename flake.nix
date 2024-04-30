@@ -7,13 +7,14 @@
     nix-ld.inputs.nixpkgs.follows = "nixpkgs";
     nix-alien.url = "github:thiagokokada/nix-alien";
     nix-colors.url = "github:misterio77/nix-colors";
+    spicetify-nix.url = "github:the-argus/spicetify-nix";
     home-manager = {
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, nix-ld, home-manager, nix-colors, ... }@inputs: {
+  outputs = { self, nixpkgs, nix-ld, home-manager, nix-colors, spicetify-nix, ... }@inputs: {
     nixosConfigurations.desktop = nixpkgs.lib.nixosSystem rec {
       system = "x86_64-linux";
       specialArgs = { inherit self system; };
@@ -35,6 +36,7 @@
         {
           home-manager.extraSpecialArgs = {
             inherit nix-colors;
+            inherit spicetify-nix;
           };
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
@@ -64,6 +66,7 @@
         {
           home-manager.extraSpecialArgs = {
             inherit nix-colors;
+            inherit spicetify-nix;
           };
           home-manager.useGlobalPkgs = true;
           home-manager.useUserPackages = true;
