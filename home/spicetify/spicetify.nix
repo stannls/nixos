@@ -22,8 +22,8 @@ in
         fullAppDisplay
         shuffle # shuffle+ (special characters are sanitized out of ext names)
         hidePodcasts
-		adblock
-		autoSkipVideo
+        adblock
+        autoSkipVideo
       ];
     };
 }

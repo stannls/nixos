@@ -8,6 +8,7 @@
     ./rofi/rofi.nix
     ./fastfetch/fastfetch.nix
     ./spicetify/spicetify.nix
+	./cava/cava.nix
     nix-colors.homeManagerModules.default
   ];
 
