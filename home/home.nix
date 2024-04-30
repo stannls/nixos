@@ -6,6 +6,7 @@
     ./beets/beets.nix
     ./dunst/dunst.nix
     ./rofi/rofi.nix
+	./fastfetch/fastfetch.nix
     nix-colors.homeManagerModules.default
   ];
 
