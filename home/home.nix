@@ -60,6 +60,7 @@
     rofi
 	bottom
 	pulseaudio
+	playerctl
   ];
 
   # Allow unfree packages
