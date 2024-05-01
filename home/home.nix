@@ -65,6 +65,7 @@
     pulseaudio
     playerctl
     hypridle
+	nixpkgs-fmt
   ];
 
   # Allow unfree packages
