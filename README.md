@@ -16,10 +16,10 @@ Currently this repo houses configurations for the following programs:
 
 ## Pictures
 ### 2 Screen Hyprland Setup
-![Image 2-Screen](https://i.imgur.com/hSyzDm7.png)
+![Image 2-Screen](https://i.imgur.com/YEHttif.png)
 
 ### Neovim
-![Image Neovim](https://i.imgur.com/7IgHgZN.png)
+![Image Neovim](https://i.imgur.com/nMGD04N.png)
 
 ## Install
 
