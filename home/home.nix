@@ -8,7 +8,8 @@
     ./rofi/rofi.nix
     ./fastfetch/fastfetch.nix
     ./spicetify/spicetify.nix
-	./cava/cava.nix
+    ./cava/cava.nix
+    ./hypridle/hypridle.nix
     nix-colors.homeManagerModules.default
   ];
 
@@ -63,6 +64,7 @@
     bottom
     pulseaudio
     playerctl
+    hypridle
   ];
 
   # Allow unfree packages
