@@ -66,6 +66,7 @@
     playerctl
     hypridle
 	nixpkgs-fmt
+	desmume
   ];
 
   # Allow unfree packages
