@@ -28,7 +28,7 @@
             "wmtheme",
             {
                 "type": "theme",
-                "format": "{?1}{1}{?3} {3}{?} [Plasma], {?}{7}"
+                "format": "{?1}{1}"
             },
             "icons",
             "terminal",
