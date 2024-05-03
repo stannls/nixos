@@ -143,6 +143,8 @@
   gtk = {
     enable = true;
     gtk3.extraConfig.gtk-decoration-layout = "menu:";
+	gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
+	gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
     theme = {
       name = "Dracula";
     };
@@ -154,7 +156,12 @@
   dconf.settings = {
       "org/gnome/desktop/interface" = {
         color-scheme = "prefer-dark";
+		gtk-theme = "Dracula";
       };
+	  "org/freedesktop/appearance" = {
+		color-scheme = "prefer-dark";
+		gtk-theme = "Dracula";
+	  };
     };
 
   # Config sourcing. This might be replaced with home manager configuration in the near future.
