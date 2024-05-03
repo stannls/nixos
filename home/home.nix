@@ -151,6 +151,11 @@
     };
   };
   home.sessionVariables.GTK_THEME = "Dracula";
+  dconf.settings = {
+      "org/gnome/desktop/interface" = {
+        color-scheme = "prefer-dark";
+      };
+    };
 
   # Config sourcing. This might be replaced with home manager configuration in the near future.
   home.file = {
