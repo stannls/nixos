@@ -19,6 +19,7 @@
   boot.loader.grub.device = "nodev";
   boot.loader.grub.efiSupport = true;
   boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.useOSProber = true;
 
   boot.initrd.luks.devices.root = {
     device = "/dev/disk/by-uuid/faaa6f88-cfb4-4719-8325-f55d46b7b2d1";
