@@ -78,7 +78,9 @@
     enableCompletion = true;
 
     shellAliases = {
-      update-desktop = "sudo nixos-rebuild --flake .#desktop switch";
+      update-desktop = "sudo nixos-rebuild --flake /home/yannis/nixos-config#desktop switch";
+
+      update-laptop = "sudo nixos-rebuild --flake /home/yannis/nixos-config#laptop switch";
       neofetch = "fastfetch";
     };
     history.size = 10000;
