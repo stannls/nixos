@@ -86,7 +86,7 @@
       neofetch = "fastfetch";
     };
     history.size = 10000;
-    history.path = "/home/yannis/zsh/history";
+    history.path = "/home/yannis/.zsh_history";
 
     # Nix shell zsh plugin
     plugins = [
