@@ -68,6 +68,7 @@
     desmume
     dracula-theme
     yubikey-manager
+	ranger
   ];
 
   # Allow unfree packages
