@@ -69,6 +69,7 @@
     dracula-theme
     yubikey-manager
 	ranger
+	ueberzug
   ];
 
   # Allow unfree packages
