@@ -1,9 +1,6 @@
-{pkgs, ...}: let
-  callPackage = pkgs.callPackage;
-in {
-  nixpkgs.overlays = [(final: prev: {
-    mypackages = {
-      dracula-theme = callPackage ./dracula-theme.nix {};
-    };
-  })];
+# Custom packages, that can be defined similarly to ones from nixpkgs
+# You can build them using 'nix build .#example'
+pkgs: {
+  dracula-theme = pkgs.callPackage ./dracula-theme.nix { };
+  yubikey-manager = pkgs.callPackage ./yubikey-manager.nix { };
 }

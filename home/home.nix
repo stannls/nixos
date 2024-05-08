@@ -38,7 +38,6 @@
     rustup
     jetbrains.idea-ultimate
     libnotify
-    yubikey-manager
     yubioath-flutter
     vscodium
     (python3.withPackages (python-pkgs: [
@@ -65,8 +64,10 @@
     pulseaudio
     playerctl
     hypridle
-	nixpkgs-fmt
-	desmume
+    nixpkgs-fmt
+    desmume
+    dracula-theme
+    yubikey-manager
   ];
 
   # Allow unfree packages
@@ -145,8 +146,8 @@
   gtk = {
     enable = true;
     gtk3.extraConfig.gtk-decoration-layout = "menu:";
-	gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
-	gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
+    gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
+    gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
     theme = {
       name = "Dracula";
     };
@@ -156,15 +157,15 @@
   };
   home.sessionVariables.GTK_THEME = "Dracula";
   dconf.settings = {
-      "org/gnome/desktop/interface" = {
-        color-scheme = "prefer-dark";
-		gtk-theme = "Dracula";
-      };
-	  "org/freedesktop/appearance" = {
-		color-scheme = "prefer-dark";
-		gtk-theme = "Dracula";
-	  };
+    "org/gnome/desktop/interface" = {
+      color-scheme = "prefer-dark";
+      gtk-theme = "Dracula";
     };
+    "org/freedesktop/appearance" = {
+      color-scheme = "prefer-dark";
+      gtk-theme = "Dracula";
+    };
+  };
 
   # Config sourcing. This might be replaced with home manager configuration in the near future.
   home.file = {

@@ -2,11 +2,11 @@
 
 stdenv.mkDerivation rec {
   pname = "dracula";
-  version = "4.0.0";
+  version = "v4.0.0";
 
   srcs = [
     (fetchurl {
-      url = "https://github.com/dracula/gtk/releases/download/${version}/Juno-palenight.tar.xz";
+      url = "https://github.com/dracula/gtk/releases/download/${version}/Dracula.tar.xz";
       sha256 = "199bd4051b243fddadc625038686c7e8a91d4e8098868aadb4ca4c0c80911b6f";
     })
   ];
@@ -18,7 +18,7 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
     mkdir -p $out/share/themes
-    cp -a Juno* $out/share/themes
+    cp -a Dracula* $out/share/themes
     rm $out/share/themes/*/{LICENSE,README.md}
     runHook postInstall
   '';
