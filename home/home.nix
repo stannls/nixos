@@ -10,6 +10,7 @@
     ./spicetify/spicetify.nix
     ./cava/cava.nix
     ./hypridle/hypridle.nix
+	./ranger/ranger.nix
     nix-colors.homeManagerModules.default
   ];
 
