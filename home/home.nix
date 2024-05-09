@@ -71,6 +71,7 @@
     yubikey-manager
 	ranger
 	ueberzug
+	pandoc
   ];
 
   # Allow unfree packages
