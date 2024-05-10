@@ -1,4 +1,4 @@
-{ config, pkgs, nix-colors, ... }:
+{ inputs, outputs, config, pkgs, nix-colors, ... }:
 
 {
   imports = [
@@ -19,6 +19,16 @@
   home.username = "yannis";
   home.homeDirectory = "/home/yannis";
   home.stateVersion = "23.11";
+
+nixpkgs = {
+    overlays = [
+      outputs.overlays.additions
+      outputs.overlays.modifications
+    ];
+    config = {
+      allowUnfree = true;
+    };
+  };
 
   # User packages
   home.packages = with pkgs; [
@@ -67,15 +77,12 @@
     hypridle
     nixpkgs-fmt
     desmume
-    dracula-gtk-theme
     yubikey-manager
 	ranger
 	ueberzug
 	pandoc
+	dracula-gtk-theme
   ];
-
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
 
   # Zsh config
   programs.zsh = {

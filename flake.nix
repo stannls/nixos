@@ -31,6 +31,7 @@
     in
     {
       packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
+	  overlays = import ./overlays {inherit inputs;};
       nixosConfigurations.desktop = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         specialArgs = { inherit self system; };
@@ -53,8 +54,9 @@
             home-manager.extraSpecialArgs = {
               inherit nix-colors;
               inherit spicetify-nix;
+			  inherit inputs;
+			  inherit outputs;
             };
-            home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.yannis = import ./home/home.nix;
           }
@@ -83,8 +85,9 @@
             home-manager.extraSpecialArgs = {
               inherit nix-colors;
               inherit spicetify-nix;
+			  inherit inputs;
+			  inherit outputs;
             };
-            home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.users.yannis = import ./home/home.nix;
           }
