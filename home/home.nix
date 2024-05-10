@@ -10,7 +10,7 @@
     ./spicetify/spicetify.nix
     ./cava/cava.nix
     ./hypridle/hypridle.nix
-	./ranger/ranger.nix
+    ./ranger/ranger.nix
     nix-colors.homeManagerModules.default
   ];
 
@@ -20,7 +20,7 @@
   home.homeDirectory = "/home/yannis";
   home.stateVersion = "23.11";
 
-nixpkgs = {
+  nixpkgs = {
     overlays = [
       outputs.overlays.additions
       outputs.overlays.modifications
@@ -78,10 +78,10 @@ nixpkgs = {
     nixpkgs-fmt
     desmume
     yubikey-manager
-	ranger
-	ueberzug
-	pandoc
-	dracula-gtk-theme
+    ranger
+    ueberzug
+    pandoc
+    dracula-gtk-theme
   ];
 
   # Zsh config
