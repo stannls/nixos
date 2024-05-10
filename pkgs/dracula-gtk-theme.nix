@@ -1,7 +1,7 @@
 { lib, stdenv, fetchurl, gtk-engine-murrine }:
 
 stdenv.mkDerivation rec {
-  pname = "dracula";
+  pname = "dracula-gtk-theme";
   version = "v4.0.0";
 
   srcs = [

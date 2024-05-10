@@ -67,7 +67,7 @@
     hypridle
     nixpkgs-fmt
     desmume
-    dracula-theme
+    dracula-gtk-theme
     yubikey-manager
 	ranger
 	ueberzug
