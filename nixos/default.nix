@@ -35,6 +35,7 @@
     quickemu
     xdg-user-dirs
     jmtpfs
+	file
   ];
 
   # Allow unfree packages
