@@ -1,4 +1,4 @@
-{ lib, rustPlatform, fetchFromGitHub }:
+{ lib, rustPlatform, fetchFromGitHub, pkgs }:
 rustPlatform.buildRustPackage rec {
   pname = "bandrip";
   version = "0.2.2";
@@ -7,10 +7,18 @@ rustPlatform.buildRustPackage rec {
     owner = "stannls";
     repo = pname;
     rev = "v${version}";
-    sha256 = "sha256-6caa360626012e106c970a142bf21381d87397411a3b5c1a5c52736c3b66d59e";
+    sha256 = "sha256-JRbXZcsSLeC4JxDz4v89lKd+cusC5YsL14A8TgYs39k=";
   };
 
-  cargoSha256 = "sha256-yIwCBm46sgrpTt45uCyyS7M6V0ReGUXVu7tyrjdNqeQ=";
+  cargoSha256 = "sha256-Lt1TyJOuFkFKgweQm58MYlzexBTrtsOMtCbuIGsCdf4";
+
+  nativeBuildInputs = with pkgs; [
+    pkg-config
+  ];
+
+  buildInputs = with pkgs; [
+	openssl
+  ];
 
   meta = with lib; {
     description = "A Bandcamp audio ripper.";
