@@ -4,6 +4,8 @@
 , python3Packages
 , installShellFiles
 , procps
+, pkgs
+, pcsclite
 }:
 
 python3Packages.buildPythonPackage rec {
@@ -23,6 +25,11 @@ python3Packages.buildPythonPackage rec {
       --replace 'pkill' '${if stdenv.isLinux then procps else "/usr"}/bin/pkill'
   '';
 
+  postFixup = ''
+    wrapProgram $out/bin/ykman \
+    --prefix LD_LIBRARY_PATH ":" "/run/current-system/sw/share/nix-ld/lib" \
+  '';
+
   nativeBuildInputs = with python3Packages; [
     poetry-core
     pythonRelaxDepsHook
@@ -35,6 +42,11 @@ python3Packages.buildPythonPackage rec {
     fido2
     click
     keyring
+	pkgs.pcsclite
+  ];
+
+  buildInputs = with pkgs; [
+  	pcsclite
   ];
 
   pythonRelaxDeps = [
