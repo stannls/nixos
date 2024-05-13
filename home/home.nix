@@ -82,6 +82,7 @@
     ueberzug
     pandoc
     dracula-gtk-theme
+	bandrip
   ];
 
   # Zsh config
