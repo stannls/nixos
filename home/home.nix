@@ -83,6 +83,7 @@
     pandoc
     dracula-gtk-theme
 	bandrip
+	nixify
   ];
 
   # Zsh config
