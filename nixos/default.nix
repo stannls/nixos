@@ -157,6 +157,7 @@
     xorg.libXrender
     xorg.libXi
     freetype
+	pcsclite
   ];
 
   system.stateVersion = "23.11";
