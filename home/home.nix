@@ -84,6 +84,7 @@
     dracula-gtk-theme
 	bandrip
 	nixify
+	libreoffice
   ];
 
   # Zsh config
