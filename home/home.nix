@@ -52,6 +52,7 @@
     yubioath-flutter
     vscodium
     (python3.withPackages (python-pkgs: [
+	  python-pkgs.pwntools
     ]))
     signal-desktop
     xdg-utils
