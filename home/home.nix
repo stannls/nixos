@@ -86,6 +86,7 @@
 	bandrip
 	nixify
 	libreoffice
+	clang-tools
   ];
 
   # Zsh config
