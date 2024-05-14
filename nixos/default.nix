@@ -139,6 +139,8 @@
       	[Settings]
       	gtk-theme-name = Dracula
     	'';
+	
+  virtualisation.virtualbox.host.enable = true;
 
   # Settings for dynamically linked programs
   programs.nix-ld.enable = true;
