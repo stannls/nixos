@@ -87,6 +87,8 @@
 	nixify
 	libreoffice
 	clang-tools
+	wine
+	winetricks
   ];
 
   # Zsh config
