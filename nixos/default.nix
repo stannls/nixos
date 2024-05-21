@@ -36,6 +36,7 @@
     xdg-user-dirs
     jmtpfs
 	file
+	linuxKernel.packages.linux_6_9.perf
   ];
 
   # Allow unfree packages
