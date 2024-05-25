@@ -89,6 +89,7 @@
 	clang-tools
 	wine
 	winetricks
+	evince
   ];
 
   # Zsh config
