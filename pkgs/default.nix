@@ -5,4 +5,5 @@ pkgs: {
   yubikey-manager = pkgs.callPackage ./yubikey-manager.nix { };
   bandrip = pkgs.callPackage ./bandrip.nix { };
   nixify = pkgs.callPackage ./nixify.nix { };
+  yubioath-flutter = pkgs.callPackage ./yubioath-flutter/default.nix { };
 }
