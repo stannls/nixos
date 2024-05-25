@@ -82,7 +82,7 @@
     ranger
     ueberzug
     pandoc
-    dracula-gtk-theme
+	dracula-theme
 	bandrip
 	nixify
 	libreoffice
@@ -173,12 +173,13 @@
     gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
     theme = {
       name = "Dracula";
+	  package = pkgs.dracula-theme;
     };
     iconTheme = {
       name = "Dracula";
+      package = pkgs.dracula-theme;
     };
   };
-  home.sessionVariables.GTK_THEME = "Dracula";
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
@@ -189,6 +190,7 @@
       gtk-theme = "Dracula";
     };
   };
+  home.sessionVariables.GTK_THEME = "Dracula";
 
   # Config sourcing. This might be replaced with home manager configuration in the near future.
   home.file = {
