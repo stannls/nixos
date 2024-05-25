@@ -35,8 +35,8 @@
     quickemu
     xdg-user-dirs
     jmtpfs
-	file
-	linuxKernel.packages.linux_6_9.perf
+    file
+    linuxKernel.packages.linux_6_9.perf
   ];
 
   programs.evince.enable = true;
@@ -145,7 +145,7 @@
       	[Settings]
       	gtk-theme-name = Dracula
     	'';
-	
+
   virtualisation.virtualbox.host.enable = true;
 
   # Settings for dynamically linked programs
@@ -165,7 +165,7 @@
     xorg.libXrender
     xorg.libXi
     freetype
-	pcsclite
+    pcsclite
   ];
 
   system.stateVersion = "23.11";

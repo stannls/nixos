@@ -17,7 +17,7 @@ rustPlatform.buildRustPackage rec {
   ];
 
   buildInputs = with pkgs; [
-	openssl
+    openssl
   ];
 
   meta = with lib; {

@@ -42,11 +42,11 @@ python3Packages.buildPythonPackage rec {
     fido2
     click
     keyring
-	pkgs.pcsclite
+    pkgs.pcsclite
   ];
 
   buildInputs = with pkgs; [
-  	pcsclite
+    pcsclite
   ];
 
   pythonRelaxDeps = [

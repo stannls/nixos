@@ -52,7 +52,7 @@
     yubioath-flutter
     vscodium
     (python3.withPackages (python-pkgs: [
-	  python-pkgs.pwntools
+      python-pkgs.pwntools
     ]))
     signal-desktop
     xdg-utils
@@ -82,13 +82,13 @@
     ranger
     ueberzug
     pandoc
-	dracula-theme
-	bandrip
-	nixify
-	libreoffice
-	clang-tools
-	wine
-	winetricks
+    dracula-theme
+    bandrip
+    nixify
+    libreoffice
+    clang-tools
+    wine
+    winetricks
   ];
 
   xdg.mimeApps.defaultApplications = {
@@ -172,7 +172,7 @@
     gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
     theme = {
       name = "Dracula";
-	  package = pkgs.dracula-theme;
+      package = pkgs.dracula-theme;
     };
     iconTheme = {
       name = "Dracula";

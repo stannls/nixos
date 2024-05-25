@@ -63,6 +63,37 @@
         ];
       };
 
+      nixosConfigurations.laptop-old = nixpkgs.lib.nixosSystem rec {
+        system = "x86_64-linux";
+        specialArgs = { inherit self system; };
+        modules = [
+          # Dynamic linking shenanigans
+          ({ self, system, ... }: {
+            environment.systemPackages = with self.inputs.nix-alien.packages.${system}; [
+              nix-alien
+            ];
+            programs.nix-ld.enable = true;
+          })
+          nix-ld.nixosModules.nix-ld
+
+          # Nixos config
+          ./nixos/default.nix
+          ./nixos/laptop-old/configuration.nix
+          # Home manager config
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.extraSpecialArgs = {
+              inherit nix-colors;
+              inherit spicetify-nix;
+              inherit inputs;
+              inherit outputs;
+            };
+            home-manager.useUserPackages = true;
+            home-manager.users.yannis = import ./home/home.nix;
+          }
+        ];
+      };
+
       nixosConfigurations.laptop = nixpkgs.lib.nixosSystem rec {
         system = "x86_64-linux";
         specialArgs = { inherit self system; };
