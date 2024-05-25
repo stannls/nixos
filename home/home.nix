@@ -89,7 +89,6 @@
 	clang-tools
 	wine
 	winetricks
-	evince
   ];
 
   xdg.mimeApps.defaultApplications = {

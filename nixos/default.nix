@@ -39,6 +39,8 @@
 	linuxKernel.packages.linux_6_9.perf
   ];
 
+  programs.evince.enable = true;
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
