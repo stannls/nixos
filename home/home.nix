@@ -92,6 +92,10 @@
 	evince
   ];
 
+  xdg.mimeApps.defaultApplications = {
+    "application/pdf" = "librewolf.desktop";
+  };
+
   # Zsh config
   programs.zsh = {
     enable = true;
