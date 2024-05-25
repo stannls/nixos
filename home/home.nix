@@ -58,7 +58,7 @@
     xdg-utils
     maven
     jdk21
-    lutris
+    lutris-free
     grim
     slurp
     rhythmbox
