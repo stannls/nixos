@@ -103,6 +103,9 @@
     pulse.enable = true;
   };
 
+  # Yubikey config
+  services.udev.packages = [ pkgs.yubikey-personalization ];
+
   # Udisks sevices
   services.gvfs.enable = true;
   services.udisks2.enable = true;
