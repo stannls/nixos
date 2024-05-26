@@ -89,6 +89,7 @@
     clang-tools
     wine
     winetricks
+	anki
   ];
 
   xdg.mimeApps.defaultApplications = {
