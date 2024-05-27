@@ -37,8 +37,14 @@
     jmtpfs
     file
     linuxKernel.packages.linux_6_9.perf
-	gcc
+    gcc
   ];
+
+  virtualisation.docker.enable = true;
+  virtualisation.docker.rootless = {
+    enable = true;
+    setSocketVariable = true;
+  };
 
   programs.evince.enable = true;
 
