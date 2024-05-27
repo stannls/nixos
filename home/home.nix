@@ -175,6 +175,10 @@
       name = "Dracula";
       package = pkgs.dracula-theme;
     };
+	cursorTheme = {
+	  name = "apple_cursor";
+	  package = pkgs.apple-cursor;
+	};
     iconTheme = {
       name = "Dracula";
       package = pkgs.dracula-theme;
