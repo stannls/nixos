@@ -90,6 +90,7 @@
     wine
     winetricks
 	anki
+	docker-compose
   ];
 
   xdg.mimeApps.defaultApplications = {
