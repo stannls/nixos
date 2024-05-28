@@ -89,8 +89,8 @@
     clang-tools
     wine
     winetricks
-	anki
-	docker-compose
+    anki
+    docker-compose
   ];
 
   xdg.mimeApps.defaultApplications = {
@@ -176,10 +176,10 @@
       name = "Dracula";
       package = pkgs.dracula-theme;
     };
-	cursorTheme = {
-	  name = "apple_cursor";
-	  package = pkgs.apple-cursor;
-	};
+    cursorTheme = {
+      name = "apple_cursor";
+      package = pkgs.apple-cursor;
+    };
     iconTheme = {
       name = "Dracula";
       package = pkgs.dracula-theme;
