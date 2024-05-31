@@ -46,6 +46,13 @@
     setSocketVariable = true;
   };
 
+  services.printing.enable = true;
+  services.avahi = {
+    enable = true;
+    nssmdns = true;
+    openFirewall = true;
+  };
+
   programs.evince.enable = true;
 
   # Allow unfree packages
