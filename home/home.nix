@@ -91,6 +91,7 @@
     winetricks
     anki
     docker-compose
+	umlet
   ];
 
   xdg.mimeApps.defaultApplications = {
