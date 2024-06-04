@@ -84,14 +84,14 @@
     pandoc
     dracula-theme
     bandrip
-    nixify
+    inputs.nixify.defaultPackage."${pkgs.system}"
     libreoffice
     clang-tools
     wine
     winetricks
     anki
     docker-compose
-	umlet
+    umlet
   ];
 
   xdg.mimeApps.defaultApplications = {

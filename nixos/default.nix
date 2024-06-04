@@ -38,7 +38,7 @@
     file
     linuxKernel.packages.linux_6_9.perf
     gcc
-	killall
+    killall
   ];
 
   virtualisation.docker.enable = true;
