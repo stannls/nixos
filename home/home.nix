@@ -91,7 +91,8 @@
     winetricks
     anki
     docker-compose
-    umlet
+	pwninit
+	patchelf
   ];
 
   xdg.mimeApps.defaultApplications = {
