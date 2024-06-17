@@ -1,4 +1,5 @@
-{ stdenv, lib
+{ stdenv
+, lib
 , fetchgit
 , fetchurl
 , wget
@@ -13,7 +14,7 @@ stdenv.mkDerivation rec {
 
   src = fetchgit {
     url = "https://aur.archlinux.org/pokemmo.git";
-	rev = "11e906da6ce13532f5cd00e1f67ac9b17c2d9a9b";
+    rev = "11e906da6ce13532f5cd00e1f67ac9b17c2d9a9b";
     hash = "sha256-8Bd7VWdgFk9mSSVUlPL6b7D2VTJNEzoeU+rrtXVXLKw=";
   };
 
@@ -23,18 +24,18 @@ stdenv.mkDerivation rec {
 
   buildInputs = [
     wget
-	openssl
-	jdk21
+    openssl
+    jdk21
   ];
 
   sourceRoot = ".";
 
   installPhase = ''
-    runHook preInstall
-    install -m755 -D ${src.name}/pokemmo-launcher $out/bin/pokemmo-launcher
-	install -m755 -D ${src.name}/pokemmo.desktop $out/share/applications/pokemmo.desktop
-	install -m755 -D ${src.name}/pokemmo-launcher.png  $out/share/icons/pokemmo-launcher.png
-    runHook postInstall
+        runHook preInstall
+        install -m755 -D ${src.name}/pokemmo-launcher $out/bin/pokemmo-launcher
+    	install -m755 -D ${src.name}/pokemmo.desktop $out/share/applications/pokemmo.desktop
+    	install -m755 -D ${src.name}/pokemmo-launcher.png  $out/share/icons/pokemmo-launcher.png
+        runHook postInstall
   '';
 
   meta = with lib; {

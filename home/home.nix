@@ -91,9 +91,9 @@
     winetricks
     anki
     docker-compose
-	pwninit
-	patchelf
-	pokemmo
+    pwninit
+    patchelf
+    pokemmo
   ];
 
   xdg.mimeApps.defaultApplications = {
