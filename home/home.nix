@@ -93,6 +93,7 @@
     docker-compose
 	pwninit
 	patchelf
+	pokemmo
   ];
 
   xdg.mimeApps.defaultApplications = {
