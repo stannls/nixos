@@ -83,8 +83,8 @@
     ueberzug
     pandoc
     dracula-theme
-    bandrip
     inputs.nixify.defaultPackage."${pkgs.system}"
+    inputs.bandrip.defaultPackage."${pkgs.system}"
     libreoffice
     clang-tools
     wine

@@ -3,6 +3,5 @@
 pkgs: {
   dracula-gtk-theme = pkgs.callPackage ./dracula-gtk-theme.nix { };
   yubikey-manager = pkgs.callPackage ./yubikey-manager.nix { };
-  bandrip = pkgs.callPackage ./bandrip.nix { };
   yubioath-flutter = pkgs.callPackage ./yubioath-flutter/default.nix { };
 }

@@ -9,6 +9,7 @@
     nix-colors.url = "github:misterio77/nix-colors";
     spicetify-nix.url = "github:the-argus/spicetify-nix";
     nixify.url = "github:stannls/nixify";
+	bandrip.url = "github:stannls/bandrip";
     home-manager = {
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
