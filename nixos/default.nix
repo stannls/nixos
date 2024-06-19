@@ -31,7 +31,7 @@
     qemu
     ntfs3g
     fuse
-    texlive.combined.scheme-medium
+    texlive.combined.scheme-full
     quickemu
     xdg-user-dirs
     jmtpfs
