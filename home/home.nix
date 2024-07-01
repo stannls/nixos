@@ -101,6 +101,9 @@
     "application/pdf" = "librewolf.desktop";
   };
 
+  xdg.userDirs.createDirectories = true;
+  xdg.userDirs.enable = true;
+
   # Zsh config
   programs.zsh = {
     enable = true;
