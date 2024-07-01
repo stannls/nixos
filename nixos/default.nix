@@ -39,7 +39,7 @@
     linuxKernel.packages.linux_6_9.perf
     gcc
     killall
-	brightnessctl
+    brightnessctl
   ];
 
   virtualisation.docker.enable = true;

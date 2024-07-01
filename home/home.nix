@@ -94,7 +94,7 @@
     pwninit
     patchelf
     pokemmo
-	element-desktop
+    element-desktop
   ];
 
   xdg.mimeApps.defaultApplications = {
