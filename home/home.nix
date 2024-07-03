@@ -131,6 +131,17 @@
         };
       }
     ];
+	# Make nix develop use zsh
+	initExtra = ''
+	function nix() {
+		if [[ "$1" == "develop" ]]; then
+			shift 1
+			command nix develop -c zsh "$@"
+		else
+			command nix "$@"
+		fi
+	}
+	'';
 
     # Oh-my-zsh settings
     oh-my-zsh = {
