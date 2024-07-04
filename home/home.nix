@@ -96,6 +96,7 @@
     pokemmo
     element-desktop
 	poppler_utils
+	ripgrep
   ];
 
   xdg.mimeApps.defaultApplications = {
