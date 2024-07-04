@@ -80,7 +80,7 @@
     desmume
     yubikey-manager
     ranger
-    ueberzug
+    ueberzugpp
     pandoc
     dracula-theme
     inputs.nixify.defaultPackage."${pkgs.system}"
