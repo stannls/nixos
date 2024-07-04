@@ -95,6 +95,7 @@
     patchelf
     pokemmo
     element-desktop
+	poppler_utils
   ];
 
   xdg.mimeApps.defaultApplications = {
