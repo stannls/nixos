@@ -97,6 +97,7 @@
     element-desktop
 	poppler_utils
 	ripgrep
+	calibre
   ];
 
   xdg.mimeApps.defaultApplications = {
