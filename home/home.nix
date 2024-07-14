@@ -43,7 +43,7 @@
     nodejs
     swaybg
     wl-clipboard
-    gnome.nautilus
+    nautilus
     discord
     thunderbird
     rustup
