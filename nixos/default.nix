@@ -6,6 +6,9 @@
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Limit max jobs
+  nix.settings.max-jobs = 10;
+
   # Enable networking
   networking.networkmanager.enable = true;
 
