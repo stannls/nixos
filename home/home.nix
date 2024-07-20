@@ -101,6 +101,7 @@
 	mpv
 	vlc
 	ffmpegthumbnailer
+	eog
   ];
 
   xdg.mimeApps.defaultApplications = {
