@@ -99,6 +99,8 @@
 	ripgrep
 	calibre
 	mpv
+	vlc
+	ffmpegthumbnailer
   ];
 
   xdg.mimeApps.defaultApplications = {
