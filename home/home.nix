@@ -98,6 +98,7 @@
 	poppler_utils
 	ripgrep
 	calibre
+	mpv
   ];
 
   xdg.mimeApps.defaultApplications = {
