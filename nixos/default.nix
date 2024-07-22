@@ -9,6 +9,9 @@
   # Limit max jobs
   nix.settings.max-jobs = 10;
 
+  # Optimise store after every build
+  nix.settings.auto-optimise-store = true;
+
   # Enable networking
   networking.networkmanager.enable = true;
 
