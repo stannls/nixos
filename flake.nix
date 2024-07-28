@@ -3,8 +3,6 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    nix-ld.url = "github:Mic92/nix-ld";
-    nix-ld.inputs.nixpkgs.follows = "nixpkgs";
     nix-alien.url = "github:thiagokokada/nix-alien";
     nix-colors.url = "github:misterio77/nix-colors";
     spicetify-nix = {
@@ -23,7 +21,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nix-ld, home-manager, nix-colors, spicetify-nix, lix-module, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-colors, spicetify-nix, lix-module, ... }@inputs:
     let
       inherit (self) outputs;
       # Supported systems for your flake packages, shell, etc.
@@ -53,7 +51,6 @@
             ];
             programs.nix-ld.enable = true;
           })
-          nix-ld.nixosModules.nix-ld
 
           # Nixos config
           ./nixos/default.nix
@@ -85,7 +82,6 @@
             ];
             programs.nix-ld.enable = true;
           })
-          nix-ld.nixosModules.nix-ld
 
           # Nixos config
           ./nixos/default.nix
@@ -117,7 +113,6 @@
             ];
             programs.nix-ld.enable = true;
           })
-          nix-ld.nixosModules.nix-ld
 
           # Nixos config
           ./nixos/default.nix
