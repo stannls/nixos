@@ -46,6 +46,8 @@
     gcc
     killall
     brightnessctl
+	man-pages
+	man-pages-posix
   ];
 
   virtualisation.docker.enable = true;
