@@ -103,6 +103,7 @@
 	ffmpegthumbnailer
 	eog
 	tmux
+	gnome-calendar
   ];
 
   xdg.mimeApps.defaultApplications = {
