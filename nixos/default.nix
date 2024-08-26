@@ -57,6 +57,7 @@
   };
 
   services.printing.enable = true;
+  services.blueman.enable = true;
   services.avahi = {
     enable = true;
     nssmdns4 = true;

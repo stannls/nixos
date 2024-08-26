@@ -9,6 +9,10 @@
   # Hostname
   networking.hostName = "nixos";
 
+  # Bluetooth
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
+
   # Timezone
   time.timeZone = "Europe/Berlin";
 
