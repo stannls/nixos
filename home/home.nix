@@ -87,7 +87,7 @@
     inputs.bandrip.defaultPackage."${pkgs.system}"
     libreoffice
     clang-tools
-    wine
+    wineWowPackages.stable
     winetricks
     anki
     docker-compose
