@@ -15,6 +15,9 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  # Open port 8080
+  networking.firewall.allowedTCPPorts = [ 8080 ];
+
   # Define a user account.
   users.users.yannis = {
     isNormalUser = true;
