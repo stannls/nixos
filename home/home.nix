@@ -102,6 +102,7 @@
 	vlc
 	ffmpegthumbnailer
 	eog
+	tmux
   ];
 
   xdg.mimeApps.defaultApplications = {
