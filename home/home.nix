@@ -53,6 +53,7 @@
     vscodium
     (python3.withPackages (python-pkgs: [
       python-pkgs.pwntools
+	  python-pkgs.jedi
     ]))
     signal-desktop
     xdg-utils
@@ -104,6 +105,7 @@
 	eog
 	tmux
 	gnome-calendar
+	radare2
   ];
 
   xdg.mimeApps.defaultApplications = {
