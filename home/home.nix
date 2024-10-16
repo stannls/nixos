@@ -106,6 +106,7 @@
 	tmux
 	gnome-calendar
 	radare2
+	prismlauncher
   ];
 
   xdg.mimeApps.defaultApplications = {
