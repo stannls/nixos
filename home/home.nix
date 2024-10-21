@@ -108,6 +108,7 @@
 	radare2
 	prismlauncher
 	jflap
+	hyprcursor
   ];
 
   xdg.mimeApps.defaultApplications = {
