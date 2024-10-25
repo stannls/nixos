@@ -44,7 +44,7 @@ stdenv.mkDerivation rec {
     Type=Application
     Icon=jflap" > jflap.desktop
 
-    		install -m755 -D jflap.desktop $out/share/application/jflap.desktop
+    		install -m755 -D jflap.desktop $out/share/applications/jflap.desktop
 
     		makeWrapper ${jre8}/bin/java $out/bin/jflap \
     			--add-flags "-jar $out/share/java/JFLAP.jar" \
