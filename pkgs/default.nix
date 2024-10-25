@@ -5,4 +5,5 @@ pkgs: {
   yubikey-manager = pkgs.callPackage ./yubikey-manager.nix { };
   yubioath-flutter = pkgs.callPackage ./yubioath-flutter/default.nix { };
   pokemmo = pkgs.callPackage ./pokemmo.nix { };
+  jflap = pkgs.callPackage ./jflap/default.nix { };
 }

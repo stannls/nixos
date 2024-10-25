@@ -107,6 +107,7 @@
 	gnome-calendar
 	radare2
 	prismlauncher
+	jflap
   ];
 
   xdg.mimeApps.defaultApplications = {
