@@ -109,6 +109,7 @@
 	prismlauncher
 	jflap
 	hyprcursor
+	gnumake
   ];
 
   xdg.mimeApps.defaultApplications = {
