@@ -110,6 +110,7 @@
 	jflap
 	hyprcursor
 	gnumake
+	pdfpc
   ];
 
   xdg.mimeApps.defaultApplications = {
