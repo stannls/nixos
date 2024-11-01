@@ -111,6 +111,7 @@
 	hyprcursor
 	gnumake
 	pdfpc
+	tree
   ];
 
   xdg.mimeApps.defaultApplications = {
