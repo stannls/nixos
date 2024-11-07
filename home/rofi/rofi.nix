@@ -18,7 +18,7 @@ in
       icon-theme:	    "Papirus";
       location:		    0;
       font:		    "JetBrainsMono Nerd Font 16";	
-      terminal:             "kitty";
+      terminal:             "alacritty";
       drun-display-format:  "{icon} {name}";
       display-drun:	    "   Apps ";
       display-run:          "  Run ";
@@ -28,7 +28,7 @@ in
     window { 
       x-offset: 10px;
       y-offset: 10px;
-      location: north west;
+      location: center;
 
       width: 450px;
       transparency: "real";

@@ -11,6 +11,7 @@
     ./cava/cava.nix
     ./hypridle/hypridle.nix
     ./ranger/ranger.nix
+	./rofi-pass/rofi-pass.nix
     nix-colors.homeManagerModules.default
   ];
 
@@ -112,8 +113,8 @@
 	gnumake
 	pdfpc
 	tree
+	wtype
   ]; 
-
 
   xdg.mimeApps.defaultApplications = {
     "application/pdf" = "librewolf.desktop";
