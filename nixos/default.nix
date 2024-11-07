@@ -45,12 +45,12 @@
     xdg-user-dirs
     jmtpfs
     file
-	perf-tools
+    perf-tools
     gcc
     killall
     brightnessctl
-	man-pages
-	man-pages-posix
+    man-pages
+    man-pages-posix
   ];
 
   virtualisation.docker.enable = true;

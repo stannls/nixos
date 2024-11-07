@@ -53,7 +53,7 @@
     vscodium
     (python3.withPackages (python-pkgs: [
       python-pkgs.pwntools
-	  python-pkgs.jedi
+      python-pkgs.jedi
     ]))
     signal-desktop
     xdg-utils
@@ -114,21 +114,22 @@
 	tree
   ]; 
 
+
   xdg.mimeApps.defaultApplications = {
     "application/pdf" = "librewolf.desktop";
   };
 
   xdg.desktopEntries.disable-notifications = {
-      name = "Disable Notifications";
-      exec = "dunstctl set-paused true";
-      terminal = false;
-    };
+    name = "Disable Notifications";
+    exec = "dunstctl set-paused true";
+    terminal = false;
+  };
 
-    xdg.desktopEntries.enable-notifications = {
-      name = "Enable Notifications";
-      exec = "dunstctl set-paused false";
-      terminal = false;
-    };
+  xdg.desktopEntries.enable-notifications = {
+    name = "Enable Notifications";
+    exec = "dunstctl set-paused false";
+    terminal = false;
+  };
 
 
   xdg.userDirs.createDirectories = true;
@@ -161,17 +162,17 @@
         };
       }
     ];
-	# Make nix develop use zsh
-	initExtra = ''
-	function nix() {
-		if [[ "$1" == "develop" ]]; then
-			shift 1
-			command nix develop -c zsh "$@"
-		else
-			command nix "$@"
-		fi
-	}
-	'';
+    # Make nix develop use zsh
+    initExtra = ''
+      	function nix() {
+      		if [[ "$1" == "develop" ]]; then
+      			shift 1
+      			command nix develop -c zsh "$@"
+      		else
+      			command nix "$@"
+      		fi
+      	}
+      	'';
 
     # Oh-my-zsh settings
     oh-my-zsh = {
@@ -244,7 +245,7 @@
     };
   };
   home.sessionVariables.GTK_THEME = "Dracula";
- 
+
   # Config sourcing. This might be replaced with home manager configuration in the near future.
   home.file = {
     ".config/hypr" = {

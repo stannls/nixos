@@ -15,7 +15,7 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-	lix-module = {
+    lix-module = {
       url = "git+https://git.lix.systems/lix-project/nixos-module?ref=main";
       inputs.nixpkgs.follows = "nixpkgs";
     };
@@ -67,7 +67,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.yannis = import ./home/home.nix;
           }
-		lix-module.nixosModules.default
+          lix-module.nixosModules.default
         ];
       };
 
@@ -98,7 +98,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.yannis = import ./home/home.nix;
           }
-		lix-module.nixosModules.default
+          lix-module.nixosModules.default
         ];
       };
 
@@ -129,7 +129,7 @@
             home-manager.useUserPackages = true;
             home-manager.users.yannis = import ./home/home.nix;
           }
-		lix-module.nixosModules.default
+          lix-module.nixosModules.default
         ];
       };
     };
