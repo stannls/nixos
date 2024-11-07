@@ -112,11 +112,24 @@
 	gnumake
 	pdfpc
 	tree
-  ];
+  ]; 
 
   xdg.mimeApps.defaultApplications = {
     "application/pdf" = "librewolf.desktop";
   };
+
+  xdg.desktopEntries.disable-notifications = {
+      name = "Disable Notifications";
+      exec = "dunstctl set-paused true";
+      terminal = false;
+    };
+
+    xdg.desktopEntries.enable-notifications = {
+      name = "Enable Notifications";
+      exec = "dunstctl set-paused false";
+      terminal = false;
+    };
+
 
   xdg.userDirs.createDirectories = true;
   xdg.userDirs.enable = true;
@@ -231,7 +244,7 @@
     };
   };
   home.sessionVariables.GTK_THEME = "Dracula";
-
+ 
   # Config sourcing. This might be replaced with home manager configuration in the near future.
   home.file = {
     ".config/hypr" = {
