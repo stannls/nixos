@@ -59,8 +59,8 @@ insert_pass="Alt+n"
 qrcode="Alt+q"
 previous_root="Shift+Left"
 next_root="Shift+Right"
-clipboard_backend=${ROFI_PASS_CLIPBOARD_BACKEND:-xclip}
-backend=${ROFI_PASS_BACKEND:-xdotool}
+clipboard_backend="wl-clipboard"
+backend="wtype"
 
 case "$clipboard_backend" in
 	"xclip");;
