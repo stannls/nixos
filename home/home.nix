@@ -115,6 +115,7 @@
 	tree
 	wtype
 	flameshot
+	eclipses.eclipse-sdk
   ]; 
 
   xdg.mimeApps.defaultApplications = {
