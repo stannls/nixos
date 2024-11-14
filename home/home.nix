@@ -114,6 +114,7 @@
 	pdfpc
 	tree
 	wtype
+	flameshot
   ]; 
 
   xdg.mimeApps.defaultApplications = {
