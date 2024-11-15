@@ -15,13 +15,9 @@
       url = "github:nix-community/home-manager/master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    lix-module = {
-      url = "git+https://git.lix.systems/lix-project/nixos-module?ref=main";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, home-manager, nix-colors, spicetify-nix, lix-module, ... }@inputs:
+  outputs = { self, nixpkgs, home-manager, nix-colors, spicetify-nix, ... }@inputs:
     let
       inherit (self) outputs;
       # Supported systems for your flake packages, shell, etc.
@@ -67,7 +63,6 @@
             home-manager.useUserPackages = true;
             home-manager.users.yannis = import ./home/home.nix;
           }
-          lix-module.nixosModules.default
         ];
       };
 
@@ -98,7 +93,6 @@
             home-manager.useUserPackages = true;
             home-manager.users.yannis = import ./home/home.nix;
           }
-          lix-module.nixosModules.default
         ];
       };
 
@@ -129,7 +123,6 @@
             home-manager.useUserPackages = true;
             home-manager.users.yannis = import ./home/home.nix;
           }
-          lix-module.nixosModules.default
         ];
       };
     };
