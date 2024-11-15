@@ -199,6 +199,7 @@
     xorg.libXi
     freetype
     pcsclite
+	libsecret
   ];
 
   system.stateVersion = "23.11";
