@@ -116,6 +116,7 @@
 	wtype
 	flameshot
 	eclipses.eclipse-sdk
+	mattermost
   ]; 
 
   xdg.mimeApps.defaultApplications = {
