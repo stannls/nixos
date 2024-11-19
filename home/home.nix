@@ -117,6 +117,8 @@
 	flameshot
 	eclipses.eclipse-sdk
 	mattermost-desktop
+	dbus
+	glib
   ]; 
 
   xdg.mimeApps.defaultApplications = {
