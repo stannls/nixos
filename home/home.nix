@@ -119,6 +119,7 @@
 	mattermost-desktop
 	dbus
 	glib
+	pwndbg
   ]; 
 
   xdg.mimeApps.defaultApplications = {
