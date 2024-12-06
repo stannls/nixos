@@ -120,6 +120,7 @@
 	dbus
 	glib
 	pwndbg
+	rars
   ]; 
 
   xdg.mimeApps.defaultApplications = {
