@@ -290,6 +290,9 @@ autocmd BufReadPost,FileReadPost * normal zR
 set foldmethod=expr
 set foldexpr=nvim_treesitter#foldexpr()
 
+" Use lualatex as tex enginge
+let g:vimtex_compiler_engine = 'lualatex'
+
 " Bookmarks for startify
 let g:startify_bookmarks = [
 \	{ 'H': '~/.config/hypr/hyprland.conf' },
