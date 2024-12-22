@@ -63,7 +63,14 @@
   services.gnome.evolution-data-server.enable = true;
   services.gnome.gnome-online-accounts.enable = true;
   services.gnome.gnome-keyring.enable = true;
-  services.displayManager.ly.enable = true;
+  services.displayManager.ly = {
+    enable = true;
+	settings = {
+	  animation = "matrix";
+	  clock = "null";
+	  bigclock = true;
+	};
+  };
   services.printing.enable = true;
   services.blueman.enable = true;
   services.avahi = {
