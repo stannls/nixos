@@ -65,11 +65,11 @@
   services.gnome.gnome-keyring.enable = true;
   services.displayManager.ly = {
     enable = true;
-	settings = {
-	  animation = "matrix";
-	  clock = "null";
-	  bigclock = true;
-	};
+    settings = {
+      animation = "matrix";
+      clock = "null";
+      bigclock = true;
+    };
   };
   services.printing.enable = true;
   services.blueman.enable = true;
@@ -101,9 +101,9 @@
       mplus-outline-fonts.githubRelease
       dina-font
       proggyfonts
-	  nerd-fonts.space-mono
-	  nerd-fonts.jetbrains-mono
-	  nerd-fonts.dejavu-sans-mono
+      nerd-fonts.space-mono
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.dejavu-sans-mono
     ];
   };
 
@@ -202,7 +202,7 @@
     xorg.libXi
     freetype
     pcsclite
-	libsecret
+    libsecret
   ];
 
   system.stateVersion = "23.11";

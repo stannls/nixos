@@ -11,7 +11,7 @@
     ./cava/cava.nix
     ./hypridle/hypridle.nix
     ./ranger/ranger.nix
-	./rofi-pass/rofi-pass.nix
+    ./rofi-pass/rofi-pass.nix
     nix-colors.homeManagerModules.default
   ];
 
@@ -97,32 +97,32 @@
     patchelf
     pokemmo
     element-desktop
-	poppler_utils
-	ripgrep
-	calibre
-	mpv
-	vlc
-	ffmpegthumbnailer
-	eog
-	tmux
-	gnome-calendar
-	radare2
-	prismlauncher
-	jflap
-	hyprcursor
-	gnumake
-	pdfpc
-	tree
-	wtype
-	flameshot
-	eclipses.eclipse-sdk
-	mattermost-desktop
-	dbus
-	glib
-	pwndbg
-	rars
-	jetbrains.webstorm
-  ]; 
+    poppler_utils
+    ripgrep
+    calibre
+    mpv
+    vlc
+    ffmpegthumbnailer
+    eog
+    tmux
+    gnome-calendar
+    radare2
+    prismlauncher
+    jflap
+    hyprcursor
+    gnumake
+    pdfpc
+    tree
+    wtype
+    flameshot
+    eclipses.eclipse-sdk
+    mattermost-desktop
+    dbus
+    glib
+    pwndbg
+    rars
+    jetbrains.webstorm
+  ];
 
   xdg.mimeApps.defaultApplications = {
     "application/pdf" = "librewolf.desktop";
