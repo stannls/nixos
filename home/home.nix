@@ -121,6 +121,7 @@
 	glib
 	pwndbg
 	rars
+	jetbrains.webstorm
   ]; 
 
   xdg.mimeApps.defaultApplications = {
