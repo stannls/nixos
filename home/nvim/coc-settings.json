@@ -33,7 +33,7 @@
   "java.configuration.runtimes": [
 	{
       "name": "JavaSE-21",
-      "path": "~/.jdks/graalvm-jdk-21.0.3",
+      "path": "~/.jdks/openjdk-22.0.1",
       "default": true
     },
   ],
