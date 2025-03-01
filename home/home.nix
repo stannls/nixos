@@ -122,6 +122,7 @@
     pwndbg
     rars
     jetbrains.webstorm
+    ungoogled-chromium
   ];
 
   xdg.mimeApps.defaultApplications = {
