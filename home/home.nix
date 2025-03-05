@@ -119,10 +119,10 @@
     mattermost-desktop
     dbus
     glib
-    pwndbg
     rars
     jetbrains.webstorm
     ungoogled-chromium
+    playwright-driver.browsers
   ];
 
   xdg.mimeApps.defaultApplications = {
