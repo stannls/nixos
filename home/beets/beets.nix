@@ -6,5 +6,8 @@
     library = "~/Music/musiclibrary.db";
     import.move = "yes";
     chroma.auto = "yes";
+    plugins = [
+      "duplicates"
+    ];
   };
 }
