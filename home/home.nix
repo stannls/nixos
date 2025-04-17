@@ -124,6 +124,7 @@
     ungoogled-chromium
     playwright-driver.browsers
     jetbrains.rust-rover
+    cmake
   ];
 
   xdg.mimeApps.defaultApplications = {
