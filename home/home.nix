@@ -123,6 +123,7 @@
     jetbrains.webstorm
     ungoogled-chromium
     playwright-driver.browsers
+    jetbrains.rust-rover
   ];
 
   xdg.mimeApps.defaultApplications = {
