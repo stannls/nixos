@@ -125,6 +125,7 @@
     playwright-driver.browsers
     jetbrains.rust-rover
     cmake
+    reaper
   ];
 
   xdg.mimeApps.defaultApplications = {
