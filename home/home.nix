@@ -126,6 +126,7 @@
     jetbrains.rust-rover
     cmake
     reaper
+    teams-for-linux
   ];
 
   xdg.mimeApps.defaultApplications = {
