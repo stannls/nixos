@@ -12,6 +12,7 @@
     ./hypridle/hypridle.nix
     ./ranger/ranger.nix
     ./rofi-pass/rofi-pass.nix
+    ./cargo/cargo.nix
     nix-colors.homeManagerModules.default
   ];
 
@@ -127,6 +128,7 @@
     cmake
     reaper
     teams-for-linux
+    mold
   ];
 
   xdg.mimeApps.defaultApplications = {
