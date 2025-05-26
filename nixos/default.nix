@@ -78,6 +78,7 @@
     nssmdns4 = true;
     openFirewall = true;
   };
+  services.nixseparatedebuginfod.enable = true;
 
   programs.evince.enable = true;
 

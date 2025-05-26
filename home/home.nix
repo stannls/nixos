@@ -66,7 +66,9 @@
     slurp
     rhythmbox
     nicotine-plus
-    gdb
+    (gdb.override {
+      enableDebuginfod = true;
+    })
     ghidra
     pkg-config
     openssl
