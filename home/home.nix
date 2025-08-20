@@ -50,6 +50,7 @@
     thunderbird
     rustup
     jetbrains.idea-ultimate
+    jetbrains.clion
     libnotify
     yubioath-flutter
     vscodium
