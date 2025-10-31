@@ -34,7 +34,7 @@
     usbutils
     udiskie
     udisks
-    pinentry
+#    pinentry
     pinentry-gnome3
     unzip
     qemu
@@ -78,7 +78,7 @@
     nssmdns4 = true;
     openFirewall = true;
   };
-  services.nixseparatedebuginfod.enable = true;
+  services.nixseparatedebuginfod2.enable = true;
 
   programs.evince.enable = true;
 
@@ -95,7 +95,7 @@
       iosevka
       noto-fonts
       noto-fonts-cjk-sans
-      noto-fonts-emoji
+      noto-fonts-color-emoji
       liberation_ttf
       fira-code
       fira-code-symbols

@@ -16,7 +16,7 @@ in
     {
       enable = true;
       theme = spicePkgs.themes.dracula;
-      colorScheme = "mocha";
+#      colorScheme = "mocha";
 
       enabledExtensions = with spicePkgs.extensions; [
         fullAppDisplay

@@ -101,7 +101,7 @@
     patchelf
     pokemmo
     element-desktop
-    poppler_utils
+    poppler-utils
     ripgrep
     calibre
     mpv
