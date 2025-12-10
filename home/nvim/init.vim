@@ -58,6 +58,7 @@ let g:highlightedyank_highlight_duration = 500
 
 Plug 'Rigellute/rigel'
 Plug 'pineapplegiant/spaceduck'
+Plug 'Julian/lean.nvim'
 call plug#end()
 
 set expandtab
@@ -326,4 +327,5 @@ require("telescope").setup({
 	},
 })
 require('telescope').load_extension('coc')
+require('lean').setup{ mappings = true }
 EOF

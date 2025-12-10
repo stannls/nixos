@@ -132,6 +132,7 @@
     reaper
     teams-for-linux
     mold
+    lean4
   ];
 
   xdg.mimeApps.defaultApplications = {
