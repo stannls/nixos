@@ -133,6 +133,7 @@
     teams-for-linux
     mold
     lean4
+    zotero
   ];
 
   xdg.mimeApps.defaultApplications = {
