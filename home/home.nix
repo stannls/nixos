@@ -49,8 +49,6 @@
     discord
     thunderbird
     rustup
-    jetbrains.idea-ultimate
-    jetbrains.clion
     libnotify
     yubioath-flutter
     vscodium
@@ -119,15 +117,10 @@
     tree
     wtype
     flameshot
-    eclipses.eclipse-sdk
     mattermost-desktop
     dbus
     glib
     rars
-    jetbrains.webstorm
-    ungoogled-chromium
-    playwright-driver.browsers
-    jetbrains.rust-rover
     cmake
     reaper
     teams-for-linux
