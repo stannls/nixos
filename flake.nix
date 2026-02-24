@@ -2,7 +2,7 @@
   description = "My NixOs configuration flake.";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
     nix-alien.url = "github:thiagokokada/nix-alien";
     nix-colors.url = "github:misterio77/nix-colors";
     spicetify-nix = {
@@ -12,7 +12,7 @@
     nixify.url = "github:stannls/nixify";
     bandrip.url = "github:stannls/bandrip";
     home-manager = {
-      url = "github:nix-community/home-manager/master";
+      url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
