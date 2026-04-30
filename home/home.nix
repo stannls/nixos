@@ -127,6 +127,7 @@
     mold
     lean4
     zotero
+    texlab
   ];
 
   xdg.mimeApps.defaultApplications = {

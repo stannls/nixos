@@ -238,8 +238,11 @@ vim.lsp.config('rust_analyzer', {
     }
   }
 })
+vim.lsp.config('texlab', {
+})
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('clangd')
+vim.lsp.enable('texlab')
 
 local cmp = require("cmp")
 local luasnip = require("luasnip")
