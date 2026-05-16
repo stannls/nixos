@@ -91,7 +91,7 @@
     inputs.bandrip.defaultPackage."${pkgs.system}"
     libreoffice
     clang-tools
-    wineWowPackages.stable
+    wine
     winetricks
     anki
     docker-compose
@@ -128,6 +128,7 @@
     lean4
     zotero
     texlab
+    lazygit
   ];
 
   xdg.mimeApps.defaultApplications = {
