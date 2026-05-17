@@ -3,7 +3,7 @@
 {
   imports = [
     ./alacritty/alacritty.nix
-#    ./beets/beets.nix
+    ./beets/beets.nix
     ./dunst/dunst.nix
     ./rofi/rofi.nix
     ./fastfetch/fastfetch.nix
@@ -97,7 +97,7 @@
     docker-compose
     pwninit
     patchelf
-    #pokemmo
+    pokemmo
     element-desktop
     poppler-utils
     ripgrep
@@ -128,6 +128,7 @@
     lean4
     zotero
     texlab
+    lazygit
   ];
 
   xdg.mimeApps.defaultApplications = {
