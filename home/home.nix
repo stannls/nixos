@@ -3,7 +3,7 @@
 {
   imports = [
     ./alacritty/alacritty.nix
-    ./beets/beets.nix
+#    ./beets/beets.nix
     ./dunst/dunst.nix
     ./rofi/rofi.nix
     ./fastfetch/fastfetch.nix
