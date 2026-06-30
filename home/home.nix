@@ -29,6 +29,11 @@
     ];
     config = {
       allowUnfree = true;
+      permittedInsecurePackages = [
+        "docker-28.5.2"
+        "librewolf-152.0.2-1"
+        "pnpm-10.29.2"
+      ];
     };
   };
 

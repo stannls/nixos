@@ -84,6 +84,11 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.permittedInsecurePackages = [
+    "docker-28.5.2"
+    "librewolf-152.0.2-1"
+    "pnpm-10.29.2"
+  ];
 
   # Fonts
   fonts = {
