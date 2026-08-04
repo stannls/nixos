@@ -92,11 +92,11 @@
     ueberzugpp
     pandoc
     dracula-theme
-    inputs.nixify.defaultPackage."${pkgs.system}"
-    inputs.bandrip.defaultPackage."${pkgs.system}"
+    inputs.nixify.defaultPackage."${pkgs.stdenv.hostPlatform.system}"
+    inputs.bandrip.defaultPackage."${pkgs.stdenv.hostPlatform.system}"
     libreoffice
     clang-tools
-    wineWowPackages.stable
+    wineWow64Packages.stable
     winetricks
     anki
     docker-compose
@@ -155,6 +155,7 @@
 
   xdg.userDirs.createDirectories = true;
   xdg.userDirs.enable = true;
+  xdg.userDirs.setSessionVariables = true;
 
   # Zsh config
   programs.zsh = {
@@ -184,7 +185,7 @@
       }
     ];
     # Make nix develop use zsh
-    initExtra = ''
+    initContent = ''
       	function nix() {
       		if [[ "$1" == "develop" ]]; then
       			shift 1
@@ -212,10 +213,10 @@
   # Git settings
   programs.git = {
     enable = true;
-    userName = "Yannis Storrer";
-    userEmail = "yannis.storrer@web.de";
-    signing.key = "4D4F489A421B7DBB";
-    extraConfig = {
+    settings = {
+      user.name = "Yannis Storrer";
+      user.email = "yannis.storrer@web.de";
+      user.signingkey = "4D4F489A421B7DBB";
       pull.rebase = true;
       commit.gpgsign = true;
       init.defaultBranch = "main";
@@ -242,6 +243,7 @@
     gtk3.extraConfig.gtk-decoration-layout = "menu:";
     gtk3.extraConfig.gtk-application-prefer-dark-theme = 1;
     gtk4.extraConfig.gtk-application-prefer-dark-theme = 1;
+    gtk4.theme = config.gtk.theme;
     theme = {
       name = "Dracula";
       package = pkgs.dracula-theme;

@@ -52,7 +52,6 @@ hl.config({
       inactive_border = { colors = { "rgba(f7768eff)", "rgba(73dacaff)" }, angle = 45 },
       active_border = { colors = { "rgba(73dacaff)", "rgba(f7768eff)" }, angle = 45 },
     },
-    no_border_on_floating = false,
     layout = "dwindle",
   },
 })
@@ -110,7 +109,6 @@ hl.animation({ leaf = "workspaces",  enabled = true, speed = 6,   bezier = "defa
 -----------------------
 hl.config({
   dwindle = {
-    pseudotile = true,
     preserve_split = true,
   },
   group = {
@@ -143,8 +141,8 @@ hl.window_rule({ name = "float-pavucontrol",      match = { title = "pavucontrol
 hl.window_rule({ name = "wlogout",                match = { title = "wlogout" },            fullscreen = true })
 hl.window_rule({ name = "wlogout-float",          match = { title = "wlogout" },            float = true })
 
-hl.window_rule({ name = "idleinhibit-mpv",        match = { title = "mpv" },                idleinhibit = "focus" })
-hl.window_rule({ name = "idleinhibit-firefox",    match = { title = "firefox" },            idleinhibit = "fullscreen" })
+hl.window_rule({ name = "idleinhibit-mpv",        match = { title = "mpv" },                idle_inhibit = "focus" })
+hl.window_rule({ name = "idleinhibit-firefox",    match = { title = "firefox" },            idle_inhibit = "fullscreen" })
 
 hl.window_rule({ name = "float-media-viewer",     match = { title = "^Media viewer$" },     float = true })
 hl.window_rule({ name = "float-volume-control",   match = { title = "^Volume Control$" },   float = true })
@@ -215,17 +213,17 @@ hl.bind(mainMod .. " + SHIFT + l", hl.dsp.window.move({ direction = "right" }))
 hl.bind(mainMod .. " + SHIFT + k", hl.dsp.window.move({ direction = "up" }))
 hl.bind(mainMod .. " + SHIFT + j", hl.dsp.window.move({ direction = "down" }))
 
--- Resize windows (TODO: verify resize API)
-hl.bind(mainMod .. " + CTRL + h", hl.dsp.window.resize({ direction = "left", amount = 20 }))
-hl.bind(mainMod .. " + CTRL + l", hl.dsp.window.resize({ direction = "right", amount = 20 }))
-hl.bind(mainMod .. " + CTRL + k", hl.dsp.window.resize({ direction = "up", amount = 20 }))
-hl.bind(mainMod .. " + CTRL + j", hl.dsp.window.resize({ direction = "down", amount = 20 }))
+-- Resize windows
+hl.bind(mainMod .. " + CTRL + h", hl.dsp.window.resize({ x = -20, y = 0 }))
+hl.bind(mainMod .. " + CTRL + l", hl.dsp.window.resize({ x = 20, y = 0 }))
+hl.bind(mainMod .. " + CTRL + k", hl.dsp.window.resize({ x = 0, y = -20 }))
+hl.bind(mainMod .. " + CTRL + j", hl.dsp.window.resize({ x = 0, y = 20 }))
 
 -- Groups
-hl.bind(mainMod .. " + g",          hl.dispatch("togglegroup"))
-hl.bind(mainMod .. " + SHIFT + g",  hl.dispatch("lockactivegroup toggle"))
-hl.bind(mainMod .. " + Tab",        hl.dispatch("changegroupactive f"))
-hl.bind(mainMod .. " + SHIFT + Tab", hl.dispatch("changegroupactive b"))
+hl.bind(mainMod .. " + g",          hl.dsp.group.toggle())
+hl.bind(mainMod .. " + SHIFT + g",  hl.dsp.group.lock_active({ action = "toggle" }))
+hl.bind(mainMod .. " + Tab",        hl.dsp.group.next())
+hl.bind(mainMod .. " + SHIFT + Tab", hl.dsp.group.prev())
 
 -- Workspaces
 hl.bind(mainMod .. " + 1", hl.dsp.focus({ workspace = 1 }))
