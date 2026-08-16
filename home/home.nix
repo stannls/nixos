@@ -134,6 +134,7 @@
     zotero
     texlab
     lazygit
+    tuxguitar
   ];
 
   xdg.mimeApps.defaultApplications = {
