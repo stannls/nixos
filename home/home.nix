@@ -135,6 +135,7 @@
     texlab
     lazygit
     tuxguitar
+    heroic
   ];
 
   xdg.mimeApps.defaultApplications = {
