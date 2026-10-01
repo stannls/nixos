@@ -1,6 +1,6 @@
 { pkgs, lib, spicetify-nix, ... }:
 let
-  spicePkgs = spicetify-nix.legacyPackages.${pkgs.system};
+  spicePkgs = spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system};
 in
 {
   # allow spotify to be installed if you don't have unfree enabled already
@@ -15,7 +15,17 @@ in
   programs.spicetify =
     {
       enable = true;
-      theme = spicePkgs.themes.dracula;
+      # dracula was removed from spicetify-nix, define it as an unpackaged theme
+      theme = {
+        name = "Dracula";
+        src = pkgs.fetchFromGitHub {
+          owner = "Darkempire78";
+          repo = "Dracula-Spicetify";
+          rev = "97bf149e7afbe408509862591a57f1d8e2dfc5d7";
+          hash = "sha256-IS0A/5zTZou9yQJ0zpqAwiW2COt/TGoscN99WGFR9FA=";
+        } + /Dracula;
+        injectCss = false;
+      };
 #      colorScheme = "mocha";
 
       enabledExtensions = with spicePkgs.extensions; [
